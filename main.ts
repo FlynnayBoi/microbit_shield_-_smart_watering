@@ -44,13 +44,14 @@ input.onButtonPressed(Button.B, function () {
     }
 })
 input.onLogoEvent(TouchButtonEvent.Pressed, function () {
-    basic.showString("" + (times_repeat))
     times_repeat += 1
+    basic.showString("" + (times_repeat))
 })
 let watering_time_difference = 0
-let times_repeat = 0
 let watering_time = 0
+let times_repeat = 0
 let non_watering_timer = 0
 let watering_timer = 0
 watering_timer = 60
 non_watering_timer = 60
+times_repeat = 0
