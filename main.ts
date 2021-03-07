@@ -39,8 +39,8 @@ input.onButtonPressed(Button.AB, function () {
 input.onButtonPressed(Button.B, function () {
     watering_time_difference += 5
     basic.showString("" + (watering_time_difference))
-    if (watering_time_difference == 0) {
-        watering_time_difference = 20
+    if (watering_time_difference >= 31) {
+        watering_time_difference = 30
     }
 })
 input.onLogoEvent(TouchButtonEvent.Pressed, function () {
