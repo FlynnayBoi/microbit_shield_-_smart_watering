@@ -35,6 +35,9 @@ input.onButtonPressed(Button.AB, function () {
     for (let index = 0; index < 10; index++) {
         music.playMelody("F G E A - - - - ", 130)
     }
+    times_repeat = 0
+    watering_time = 0
+    watering_time_difference = 0
 })
 input.onButtonPressed(Button.B, function () {
     watering_time_difference += 5
@@ -47,11 +50,14 @@ input.onLogoEvent(TouchButtonEvent.Pressed, function () {
     times_repeat += 1
     basic.showString("" + (times_repeat))
 })
-let watering_time_difference = 0
-let watering_time = 0
 let times_repeat = 0
 let non_watering_timer = 0
 let watering_timer = 0
+let watering_time_difference = 0
+let watering_time = 0
+music.setBuiltInSpeakerEnabled(true)
+watering_time = 0
+watering_time_difference = 0
 watering_timer = 60
 non_watering_timer = 60
 times_repeat = 0
